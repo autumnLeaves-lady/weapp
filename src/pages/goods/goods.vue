@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { getGoodsByIdAPI } from '@/services/goods'
-import { onLoad } from '@dcloudio/uni-app'
-import { ref } from 'vue'
 import type { GoodsResult } from '@/types/goods'
 
 // 获取屏幕边界到安全区域距离

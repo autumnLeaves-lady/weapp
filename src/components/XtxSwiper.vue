@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import type { BannerItem } from '@/types/home'
 
 const activeIndex = ref(0)

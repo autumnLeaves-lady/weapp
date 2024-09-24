@@ -1,8 +1,6 @@
 // /src/pages/hot/hot.vue
 <script setup lang="ts">
 import { getHotRecommendApi } from '@/services/hot'
-import { onLoad } from '@dcloudio/uni-app'
-import { ref } from 'vue'
 import type { SubTypeItem } from '@/types/hot'
 
 // 热门推荐页 标题和url

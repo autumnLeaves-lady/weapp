@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { getHomeBannerApi } from '@/services/home'
-import { computed, ref } from 'vue'
 import type { BannerItem } from '@/types/home'
-import { onLoad } from '@dcloudio/uni-app'
 import { getCategoryTopApi } from '@/services/category'
 import type { CategoryChildItem, CategoryTopItem } from '@/types/category'
 import PageSkeleton from './components/PageSkeleton.vue'

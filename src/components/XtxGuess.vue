@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { getHomeGoodsGuessLikeApi } from '@/services/home'
-import { onMounted, ref } from 'vue'
 import type { GuessItem } from '@/types/home'
 import type { PageParams } from '@/types/global'
 

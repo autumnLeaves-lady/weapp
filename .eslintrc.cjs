@@ -8,6 +8,7 @@ module.exports = {
     'eslint:recommended',
     '@vue/eslint-config-typescript',
     '@vue/eslint-config-prettier',
+    './.eslintrc-auto-import.json',
   ],
   // 小程序全局变量
   globals: {

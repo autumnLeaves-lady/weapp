@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import type { BannerItem, CategoryItem, HotItem } from '@/types/home'
 import { getHomeBannerApi, getHomeCategoryApi, getHomeHotApi } from '@/services/home'
-import { onLoad } from '@dcloudio/uni-app'
 import CustomNavbar from './components/CustomNavbar.vue'
 import CategoryPanel from './components/CategoryPanel.vue'
 import HotPanel from './components/HotPanel.vue'
@@ -98,8 +96,10 @@ page {
   display: flex;
   flex-direction: column;
 }
+
 .scroll-view {
   flex: 1;
 }
+
 //
 </style>
