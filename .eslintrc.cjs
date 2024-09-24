@@ -4,11 +4,11 @@ require('@rushstack/eslint-patch/modern-module-resolution')
 module.exports = {
   root: true,
   extends: [
-    'plugin:vue/vue3-essential',
-    'eslint:recommended',
-    '@vue/eslint-config-typescript',
-    '@vue/eslint-config-prettier',
-    './.eslintrc-auto-import.json',
+    'plugin:vue/vue3-essential', // eslint-plugin-vue依赖
+    'eslint:recommended', // eslint依赖
+    '@vue/eslint-config-typescript', // eslint + ts依赖
+    '@vue/eslint-config-prettier', // eslint + prettier依赖
+    // './.eslintrc-auto-import.json', //全局变量
   ],
   // 小程序全局变量
   globals: {
@@ -31,10 +31,10 @@ module.exports = {
     'prettier/prettier': [
       'warn',
       {
-        singleQuote: true,
-        semi: false,
-        printWidth: 100,
-        trailingComma: 'all',
+        singleQuote: true, // 单引号
+        semi: false, // 结尾分号
+        printWidth: 100, // 一行最多100个字符
+        trailingComma: 'all', // 在所有多行结构中都使用尾逗号
         endOfLine: 'auto',
       },
     ],
