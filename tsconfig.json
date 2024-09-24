@@ -9,14 +9,19 @@
     },
     "lib": ["esnext", "dom"],
     "types": [
+      // uni API 相关的 TypeScript 类型，uni-app 默认的类型声明文件
       "@dcloudio/types",
+      // wx API 相关的 TypeScript 类
       "miniprogram-api-typings",
+      // 为 uni-app 组件提供 TypeScript 类型
       "@uni-helper/uni-app-types",
+      // 为 uni-ui 组件提供 TypeScript 类型
       "@uni-helper/uni-ui-types"
     ]
   },
+  // vue 编译器类型，校验标签类型
   "vueCompilerOptions": {
-    // experimentalRuntimeMode 已废弃，现调整为 nativeTags，请升级 Volar 插件至最新版本
+    // 调整 Volar（Vue 语言服务工具）解析行为，用于为 uni-app 组件提供 TypeScript 类型
     "plugins": ["@uni-helper/uni-app-types/volar-plugin"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
